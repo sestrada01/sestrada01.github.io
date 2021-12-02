@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- This is an example of an HTML file utilizing Internal JS -->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>JS_Assign1-Mablibs</title>
+
+<style>
+  span{
+    color:red;
+  }
+  </style>
+</head>
+
+<body>
+	<h2>Demo JavaScript Innertext</h2>
+
+	<h3>Demo1</h3>
+	<p id="demo1">Hi  </p>
+
+	<h3>Demo2</h3>
+
+	<p id="demo2">Hi my name is </p>
+
+	<h3>Demo3</h3>
+
+	<p id="demo3">Heya! </p>
+<br><br><br><br><br>
+	<h3>MadLib - This the assignment</h3>
+
+<!-- Extend the Madlib so that it has at least 8 different words-->
+<p> Here's a madlib about a kid named <span id = "name1">____</span>  who had an imaginary friend <span id = "name2"> ____</span>. One day the two of them went up a hill and found a pot of <span id = "noun1"> _____ </span>. They decided to go to the park where they decided to play <span id = "sport1"> ___</span> together. Eventually they got hungry and left the park to go eat <span id = "food1"> ___</span>. They were so full that they decided to go <span id = "activity1"> ___ </span> to help digest some of the food. They got thirsty so they decided to go drink some <span id = "drink1">___ </span>. While at the store they got some <span id = "snack1">___ </span>.</p> 
+
+	<script>  //The Javascript goes in this section below 
+    
+//demo 1 shows replacement of HTML text
+document.getElementById("demo1").innerHTML = "Hello World!";
+
+//demo 2 shows concatenation of HTML text
+document.getElementById("demo2").innerHTML += "dr og";
+
+//demo 3 shows a prompt which stores info as a variable
+//demo 3 shows a prompt which stores info as a variable
+
+var name = prompt("Please enter your name");
+
+document.getElementById("demo3").innerHTML = "Hello " + name + "! How are you today?";
+
+
+
+//Put the Madlib JS Code below here. Extend this code so that asks for 8 different inputs and prints them all out
+
+
+var name1 = prompt("Give me a name");
+var name2 = prompt("Give me another name");
+var noun1 = prompt("Give me an appropriate object");
+var sport1 = prompt("Give me a sport");
+var food1=prompt("Give me a food")
+var activity1= prompt("Give me an activity")
+var drink1= prompt("Give me a drink")
+var snack1= prompt("Give me a snack")
+
+document.getElementById("name1").innerHTML = name1;
+document.getElementById("name2").innerHTML = name2;
+document.getElementById("noun1").innerHTML = noun1;
+document.getElementById("sport1").innerHTML= sport1; 
+document.getElementById("food1").innerHTML = food1;
+document.getElementById("activity1").innerHTML = activity1; 
+document.getElementById("drink1").innerHTML = drink1;
+document.getElementById("snack1").innerHTML = snack1;
+
+
+	</script>
+
+
+</body>
+
+</html>
